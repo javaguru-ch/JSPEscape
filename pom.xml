@@ -22,19 +22,6 @@
         <connection>scm:git:https://github.com/javaguru-ch/JSPEscape</connection>
     </scm>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
