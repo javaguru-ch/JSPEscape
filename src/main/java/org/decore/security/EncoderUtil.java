@@ -19,7 +19,18 @@ package org.decore.security;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
+/**
+ * @author thierry.messer
+ *
+ * This class is a utility class which provides some encoding / escaping functionality.
+ */
 public class EncoderUtil {
+
+    /**
+     * This method wraps the {@link java.net.URLEncoder} and uses UTF-8 as charset.
+     * @param input the String to be url-encoded.
+     * @return the url-encoded string derived from <code>input</code>.
+     */
     public static String encodeURL(String input) {
         try {
             return URLEncoder.encode(input, "UTF-8");
