@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        version="2.1">
+
+    <description>The simple way to bring commonly used escaping/encoding to JSP</description>
+    <display-name>JSP Escaping/Encoding Functions</display-name>
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>esc</short-name>
+    <uri>https://github.com/javaguru-ch/JSPEscape</uri>
+
+    <function>
+        <name>HTML</name>
+        <function-class>org.apache.commons.lang3.StringEscapeUtils</function-class>
+        <function-signature>java.lang.String escapeHtml4(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>URL</name>
+        <function-class>org.decore.security.EncoderUtil</function-class>
+        <function-signature>java.lang.String encodeURL(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>JS</name>
+        <function-class>org.apache.commons.lang3.StringEscapeUtils</function-class>
+        <function-signature>java.lang.String escapeEcmaScript(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>JSON</name>
+        <function-class>org.apache.commons.lang3.StringEscapeUtils</function-class>
+        <function-signature>java.lang.String escapeJson(java.lang.String)</function-signature>
+    </function>
+
+</taglib>
