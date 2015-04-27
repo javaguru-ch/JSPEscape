@@ -1,7 +1,8 @@
 JSPEscape
 =========
 
-The simple way to bring commonly used escaping/encoding to JSP
+The simple way to bring commonly used escaping/encoding to JSP.
+Escape special character in strings used for HTML, JavaScript, JSON and URL creation.
 
 #Usage
 1. Make sure the library is in your projects classpath (i.e. jspescape.jar is located in the directory <WEBAPP>/WEB-INF/lib).
