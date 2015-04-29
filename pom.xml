@@ -9,6 +9,10 @@
     <description>The simple way to bring commonly used escaping/encoding to JSP</description>
     <url>https://github.com/javaguru-ch/JSPEscape</url>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -35,6 +39,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -47,6 +52,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -67,6 +73,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.5</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
